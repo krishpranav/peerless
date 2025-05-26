@@ -20,4 +20,14 @@ import Foundation
         }
     }
 
+    func getVariable<T>(_ key: String) -> T? {
+        return variables[key] as? T
+    }
+
+    func removeVariable(_ key: String) {
+        Task { @MainActor in
+            self.objectWillChange.send()
+            self.variables[key] = nil
+        }
+    }
 }
