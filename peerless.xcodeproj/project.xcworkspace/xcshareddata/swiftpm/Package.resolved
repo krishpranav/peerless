@@ -1,0 +1,15 @@
+{
+  "originHash" : "137c77ff4438b9795fb1a640664173a52f9d97e440f075ffdb745ecfabac17c2",
+  "pins" : [
+    {
+      "identity" : "bluesocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kitura/BlueSocket.git",
+      "state" : {
+        "revision" : "7b23a867008e0027bfd6f4d398d44720707bc8ca",
+        "version" : "2.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}
