@@ -12,7 +12,7 @@ import OSLog
 final class LocalGames {
     public static let log = Logger(subsystem: Logger.subsystem, category: "localGames")
 
-    static var library: Set<Game>? {
+    static var library: Set<peerless.Game>? {
         get {
             return (try? defaults.decodeAndGet(Set.self, forKey: "localGamesLibrary")) ?? .init()
         }
@@ -25,7 +25,7 @@ final class LocalGames {
         }
     }
 
-    static func launch(game: Mythic.Game) async throws {
+    static func launch(game: peerless.Game) async throws {
         Logger.app.notice("Launching local game \(game.title) (\(game.platform?.rawValue ?? "unknown"))")
 
         guard let library = library,
