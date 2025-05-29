@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17338842DE856F400821114 /* SemanticVersion in Frameworks */ = {isa = PBXBuildFile; productRef = B17338832DE856F400821114 /* SemanticVersion */; };
 		B173CC2F2DE5A4BF00264E51 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B173CC2E2DE5A4BF00264E51 /* Sparkle */; };
 		B1A21C692DE477AA005E38C1 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = B1A21C682DE477AA005E38C1 /* Socket */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 			files = (
 				B1A21C692DE477AA005E38C1 /* Socket in Frameworks */,
 				B173CC2F2DE5A4BF00264E51 /* Sparkle in Frameworks */,
+				B17338842DE856F400821114 /* SemanticVersion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +123,7 @@
 			packageProductDependencies = (
 				B1A21C682DE477AA005E38C1 /* Socket */,
 				B173CC2E2DE5A4BF00264E51 /* Sparkle */,
+				B17338832DE856F400821114 /* SemanticVersion */,
 			);
 			productName = peerless;
 			productReference = B1A21C2D2DE47563005E38C1 /* peerless.app */;
@@ -207,6 +210,7 @@
 			packageReferences = (
 				B1A21C672DE477AA005E38C1 /* XCRemoteSwiftPackageReference "BlueSocket" */,
 				B173CC2D2DE5A4BF00264E51 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				B17338822DE856F400821114 /* XCRemoteSwiftPackageReference "SemanticVersion" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B1A21C2E2DE47563005E38C1 /* Products */;
@@ -564,6 +568,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B17338822DE856F400821114 /* XCRemoteSwiftPackageReference "SemanticVersion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftPackageIndex/SemanticVersion";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
 		B173CC2D2DE5A4BF00264E51 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
@@ -583,6 +595,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B17338832DE856F400821114 /* SemanticVersion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B17338822DE856F400821114 /* XCRemoteSwiftPackageReference "SemanticVersion" */;
+			productName = SemanticVersion;
+		};
 		B173CC2E2DE5A4BF00264E51 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B173CC2D2DE5A4BF00264E51 /* XCRemoteSwiftPackageReference "Sparkle" */;

@@ -1,5 +1,5 @@
 {
-  "originHash" : "17f037e64f7f4951f3cfd022850da6140f0a9dbe7ffb35769a40e3a9f420ed8f",
+  "originHash" : "e048bc73dcac4cc79191fef067f212540078e0a4e31c9fc9dfca2f554937b4e2",
   "pins" : [
     {
       "identity" : "bluesocket",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "7b23a867008e0027bfd6f4d398d44720707bc8ca",
         "version" : "2.0.4"
+      }
+    },
+    {
+      "identity" : "semanticversion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftPackageIndex/SemanticVersion",
+      "state" : {
+        "revision" : "ea8eea9d89842a29af1b8e6c7677f1c86e72fa42",
+        "version" : "0.4.0"
       }
     },
     {
